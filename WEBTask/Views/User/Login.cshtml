@@ -1,0 +1,13 @@
+﻿@model WEBTask.Models.LoginDto
+
+<form asp-action="Login" method="post">
+    <div>
+        <label asp-for="UsernameOrEmail"></label>
+        <input asp-for="UsernameOrEmail" />
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <button type="submit">Login</button>
+</form>
