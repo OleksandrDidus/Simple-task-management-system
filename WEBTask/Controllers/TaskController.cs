@@ -57,7 +57,7 @@ namespace WEBTask.Controllers
             ModelState.AddModelError(string.Empty, "Failed to create task.");
             return View(model);
         }
-        public async Task<IActionResult> Edit(Guid? id)
+        public async Task<IActionResult> Update(Guid? id)
         {
             if (id == null)
             {

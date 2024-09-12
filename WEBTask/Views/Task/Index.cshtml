@@ -28,7 +28,7 @@
                 <td>@task.Priority</td>
                 <td>@task.DueDate?.ToShortDateString()</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@task.Id" class="btn btn-warning">Edit</a>
+                    <a asp-action="Update" asp-route-id="@task.Id" class="btn btn-warning">Edit</a>
                     <form asp-action="Delete" asp-route-id="@task.Id" method="post" style="display:inline;">
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>

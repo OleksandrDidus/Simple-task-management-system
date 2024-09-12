@@ -60,7 +60,7 @@ namespace Api.Controllers
             {
                 return NotFound();
             }
-            var taskDto = _mapper.Map<TaskDto>(task);
+            var taskDto = _mapper.Map<TaskDto>(task.Data);
             return Ok(taskDto);
         }
 
